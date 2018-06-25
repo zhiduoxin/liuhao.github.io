@@ -8,17 +8,32 @@
 
 <title>
   
-    ProgrammerWorking
+    Xcode9使用时那些坑
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ProgrammerWorking">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Xcode9 使用时那些坑我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 #####1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.解决办法是：在图中部分手动再次添加一次  #####2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图">
+<meta name="keywords" content="Xcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xcode9使用时那些坑">
+<meta property="og:url" content="http://yoursite.com/2018/06/25/Xcode9使用时那些坑/index.html">
 <meta property="og:site_name" content="ProgrammerWorking">
+<meta property="og:description" content="Xcode9 使用时那些坑我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 #####1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.解决办法是：在图中部分手动再次添加一次  #####2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170928102111996?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170928102325387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170928102938800?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170930141441338?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170930142138648?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171125110203947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171201115612730?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171201115627200?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-06-25T08:21:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ProgrammerWorking">
+<meta name="twitter:title" content="Xcode9使用时那些坑">
+<meta name="twitter:description" content="Xcode9 使用时那些坑我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 #####1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.解决办法是：在图中部分手动再次添加一次  #####2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
   <link rel="alternative" href="/atom.xml" title="ProgrammerWorking" type="application/atom+xml">
@@ -150,43 +165,34 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-Xcode9使用时那些坑" class="article article-type-post">
+  
+    <h1 class="article-header">
+      Xcode9使用时那些坑
+    </h1>
   
   
-    <div class="post-list">
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/06/25/Xcode9使用时那些坑/" >
-  Xcode9使用时那些坑
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/06/25/Xcode9使用时那些坑/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2018-06-25
 </span>
-</a>
-        
+
+    
 	<span class="article-category tagcloud">
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/iOS/">iOS</a></li></ul>
 	</span>
 
 
-        
+    
 	<span class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xcode/">Xcode</a></li></ul>
 	</span>
 
 
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="Xcode9-使用时那些坑"><a href="#Xcode9-使用时那些坑" class="headerlink" title="Xcode9 使用时那些坑"></a>Xcode9 使用时那些坑</h1><pre><code>我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。
+  </div>
+  <div class="article-entry">
+    <h1 id="Xcode9-使用时那些坑"><a href="#Xcode9-使用时那些坑" class="headerlink" title="Xcode9 使用时那些坑"></a>Xcode9 使用时那些坑</h1><pre><code>我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。
 </code></pre><p>#####<strong>1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。</strong><br><img src="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170928102111996?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>这样就是显示不出来.<br>解决办法是：在图中部分手动再次添加一次<br><img src="http://img.blog.csdn.net/20170928102325387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <hr>
 <p>#####<strong>2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在info.plist中少添加了下面，</strong><br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;key&gt;NSAppTransportSecurity&lt;<span class="regexp">/key&gt;</span></span><br><span class="line"><span class="regexp">    &lt;dict&gt;</span></span><br><span class="line"><span class="regexp">        &lt;key&gt;NSAllowsArbitraryLoads&lt;/key</span>&gt;</span><br><span class="line">        &lt;<span class="literal">true</span>/&gt;</span><br><span class="line">    &lt;<span class="regexp">/dict&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -214,136 +220,29 @@
 </blockquote>
 <p>后续，继续总结中。。。。。如果你们发现其他Xcode9的Bug以及解决方法，可以给<a href="mailto:571142107@qq.com" target="_blank" rel="noopener">571142107@qq.com</a>发邮件，我会在文章给    <strong><em>贡献人的链接</em></strong></p>
 
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/06/25/test/" >
-  test
-</a>
-
-      </h3>
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
       
-
-      <div class="article-info">
-        <a href="/2018/06/25/test/"><span class="article-date">
-  2018-06-25
-</span>
-</a>
+          <img src="/images/cc/by.png">
         
-	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/iOS/">iOS</a></li></ul>
-	</span>
-
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="测试博客"><a href="#测试博客" class="headerlink" title="测试博客"></a>测试博客</h1><pre><code>测试测试
-</code></pre>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/06/25/My-New-Post/" >
-  My New Post
-</a>
-
-      </h3>
+          <img src="/images/cc/sa.png">
       
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
 
-      <div class="article-info">
-        <a href="/2018/06/25/My-New-Post/"><span class="article-date">
-  2018-06-25
-</span>
-</a>
-        
 
-        
+    
 
-      </div>
-      <div class="article-entry">
-        
-          
-        
-      </div>
-    </div>
+  </footer>
+</article>
 
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2018/06/25/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2018/06/25/hello-world/"><span class="article-date">
-  2018-06-25
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
 
 
 
