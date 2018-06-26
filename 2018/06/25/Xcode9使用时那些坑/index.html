@@ -12,13 +12,13 @@
   
 </title>
 
-<meta name="description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.">
+<meta name="description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来. 解决办法是：在图中部分手动再次添加一次  2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在">
 <meta name="keywords" content="Xcode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xcode9 使用时那些坑">
 <meta property="og:url" content="http://yoursite.com/2018/06/25/Xcode9使用时那些坑/index.html">
 <meta property="og:site_name" content="ProgrammerWorking">
-<meta property="og:description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.">
+<meta property="og:description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来. 解决办法是：在图中部分手动再次添加一次  2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170928102111996?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -29,10 +29,10 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20171125110203947?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171201115612730?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171201115627200?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-06-26T01:25:50.000Z">
+<meta property="og:updated_time" content="2018-06-26T01:27:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Xcode9 使用时那些坑">
-<meta name="twitter:description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来.">
+<meta name="twitter:description" content="我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。 1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。这样就是显示不出来. 解决办法是：在图中部分手动再次添加一次  2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -98,21 +98,21 @@
           
             
               <li class="category-list-container">
-                <a href="javascript:;">分类</a>
+                <a href="javascript:;">Category</a>
                 <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">标签</a>
+                <a href="javascript:;">Tag</a>
                 <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Xcode/">Xcode</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">归档</a>
+                <a href="javascript:;">Archive</a>
                 <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
@@ -193,7 +193,8 @@
   </div>
   <div class="article-entry">
     <p>我目前使用Xcode9发现一些奇怪的坑，坑的不要不要的。。。。。</p>
-<h3 id="1-本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。"><a href="#1-本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。" class="headerlink" title="1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。"></a><strong>1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。</strong></h3><p><img src="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170928102111996?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>这样就是显示不出来.<br><a id="more"></a><br>解决办法是：在图中部分手动再次添加一次<br><img src="http://img.blog.csdn.net/20170928102325387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h3 id="1-本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。"><a href="#1-本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。" class="headerlink" title="1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。"></a><strong>1.本地图片怎么也不显示（新拖入的图片），如果之前的用xcode8开发的项目拖入的图片再用xcode9打开没有影响，但是在Xcode9新拖入的图片怎么也不显示。</strong></h3><p><img src="http://img.blog.csdn.net/20170928102039206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><!-- 阅读全文 --><br><img src="http://img.blog.csdn.net/20170928102111996?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>这样就是显示不出来.</p>
+<p>解决办法是：在图中部分手动再次添加一次<br><img src="http://img.blog.csdn.net/20170928102325387?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <hr>
 <h3 id="2-网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http-），有人可能会说，你肯定是在info-plist中少添加了下面，"><a href="#2-网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http-），有人可能会说，你肯定是在info-plist中少添加了下面，" class="headerlink" title="2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在info.plist中少添加了下面，"></a><strong>2.网络图片在浏览器可以显示出来，但是在app中怎么显示不出来（图片http://），有人可能会说，你肯定是在info.plist中少添加了下面，</strong></h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;key&gt;NSAppTransportSecurity&lt;<span class="regexp">/key&gt;</span></span><br><span class="line"><span class="regexp">    &lt;dict&gt;</span></span><br><span class="line"><span class="regexp">        &lt;key&gt;NSAllowsArbitraryLoads&lt;/key</span>&gt;</span><br><span class="line">        &lt;<span class="literal">true</span>/&gt;</span><br><span class="line">    &lt;<span class="regexp">/dict&gt;</span></span><br></pre></td></tr></table></figure>
 <p>但是坑就在这里了，你会发现你添加了，图片还是显示不出来，还是报的错误是http：//授权没有开启的意思。<br>解决方法:  手动再添加一次，下图的方法<br><img src="http://img.blog.csdn.net/20170928102938800?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUHJvZ3JhbW1lcldvcmtpbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
@@ -223,7 +224,7 @@
   <footer class="article-footer">
     
   <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="Attribution-ShareAlike">
       <img src="/images/cc/cc.png">
       
           <img src="/images/cc/by.png">
@@ -231,7 +232,7 @@
           <img src="/images/cc/sa.png">
       
       <span>
-        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
       </span>
     </a>
   </div>
